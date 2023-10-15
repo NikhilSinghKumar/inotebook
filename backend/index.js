@@ -5,6 +5,9 @@ const express = require('express')
 const app = express()
 const port = 5000
 
+// Middleware to send request
+app.use(express.json())
+
 // available routes
 app.use('/api/auth', require('./routes/auth'))
 // app.use('/api/notes', require('./routes/notes'))

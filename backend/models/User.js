@@ -23,5 +23,4 @@ const UserSchema = new Schema({
 
   // making model from Schema
   const User = mongoose.model('user', UserSchema);
-  User.createIndexes(); // handling duplicate username
   module.exports = User
